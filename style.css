@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: poppins;
+}
+
+.nav-section {
+    position: sticky;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.contact-btn {
+    color: #212121;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+    border-radius: .5rem;
+    padding: .5rem .75rem;
+    font-size: medium;
+    
+}
+
+.contact-btn:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+    margin-right: 300px;
+    box-sizing: border-box;
+    width: auto;
+    height: 100vh;
+}
+
+.banner-box {
+    display: flex;
+    justify-content: center;
+    border: solid 1px;
+    height: 200px;
+    width: 700px;
+
+}
+
+.avatar-section {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: auto;
+    box-sizing: border-box;
+
+}
+
+.avatar {
+    border: solid 2px black;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+     
+}
+
+.follow-btn { 
+    border: solid 1px rgb(202, 202, 202);
+    background-color: transparent;
+    font-size: medium;
+    font-weight: bold;
+    color: #212121;
+    border-radius: 1.5rem;
+    padding: .5rem .75rem;
+    margin-top: 1rem;
+    width: auto;
+}
+
+.follow-btn:hover {
+    background-color: rgb(202, 202, 202) ;
+}
+
+.name, .about {
+    line-height: 1.5rem;
+    font-size: 14px;
+}
+
+
+.status-img {
+    height: 20px;
+    width: auto;
+    display: flex;
+}
+
+.info-sect {
+display: flex;
+font-size: small;
+align-items: center;
+margin-bottom: 1rem;
+}
+
+.info {
+    display: flex;
+    margin-right: 1rem;
+    align-items: center;
+}
+
+.info-icon {
+    padding-right: .25rem;
+}
+
+footer {
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-btns-box {
+    border-bottom: solid .1rem lightgray;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.content-btns {
+border: none;
+background-color: transparent;
+font-size: medium;
+padding: 1rem 1rem;
+
+}
+
+.content-btns:hover {
+    font-weight: bold;
+    /* border-bottom: 2px solid black; */
+    background-color: lightgrey;
+}
+
+.feed-ava {
+    height: 35px;
+    width: 35px;
+    border: solid 2px;
+    border-radius: 50%;
+}
