@@ -2,6 +2,7 @@
 
 * {
     font-family: poppins, inter, Arial, Helvetica, sans-serif;
+    transition: ease all .5s;
 }
 
 body {
@@ -24,7 +25,7 @@ body {
 .name {
     box-sizing: border-box;
     border: none;
-    background-color: white;
+    background-color: none;
     padding: .2rem .5rem;
     border-radius: 1rem;
     cursor: pointer;
@@ -50,80 +51,173 @@ body {
     font-weight: 500;
 }
 
+.blog-btn:hover, .resume-btn:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    font-size: 1rem;
+}
+
 /* Page Section CSS */
-.content-box {
-    box-sizing: content-box;
-    padding: 1rem;
+@media only screen and (min-width: 768px) {
+
+
+
+    .content-box {
+        box-sizing: content-box;
+        padding: .5rem 2rem;
+    }
+    
+    .interactive-section {
+        border: none;
+        border-radius: 1rem;
+        background-color: white;
+        height: 90%
+    }
+    
+    .hero-btn {
+        background-color: black;
+        color: white;
+        padding: .2rem .5rem;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+
+    .hero-btn:hover {
+        background-color: rgba(0, 0, 0, 0);
+        color: black;
+    }
+    
+    .top-right-section {
+        border: none;
+        border-radius: 1rem;
+        background-color: white;
+    }
+    
+    .bottom-right-section {
+        border: none;
+        border-radius: 1rem;
+        background-color: white;
+    }
+    
+    .cta-btn {
+        color: white;
+        background-color: black;
+        border-radius: 5rem;
+        font-weight: 500;
+        width: 100%;
+        padding: 3rem;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+
+    .cta-btn:hover {
+        background-color: rgba(0, 0, 0, 0);
+        color: black;
+        font-size: 1rem;
+    }
+    
+    /* Grid Adjustment CSS*/
+    .main-grid {
+        display: grid;
+        grid-gap: 1rem;
+        height: 90vh;
+    }
+    
+    .main-grid, .interactive-section {
+        display: grid;
+        grid-row: 1 / span 5;
+        grid-column: 1 / span 2;
+    }
+    
+    .main-grid, .top-right-section {
+        display: grid;
+        grid-row: 1 / span 2;
+        grid-column: 3 / span 1;
+    }
+    
+    .main-grid, .bottom-right-section {
+        display: grid;
+        grid-row: 3 / span 2;
+        grid-column: 3 / span 1;
+    }
+    
+    .main-grid, .cta {
+        display: grid;
+        grid-row: 5 / span 1;
+        grid-column: 3 / span 1;
+    }
 }
 
-.interactive-section {
-    border: none;
-    border-radius: 1rem;
-    background-color: white;
-    height: 90%
+/* Mobile View */
+@media only screen and (max-width: 767px) {
+    * {
+        font-size: 1rem;
+        transition: ease all 1s;
+    }
+
+    .content-box {
+        box-sizing: content-box;
+        padding: 1rem;
+    }
+    
+    .interactive-section {
+        border: none;
+        border-radius: 1rem;
+        background-color: white;
+        height: 90%
+    }
+    
+    .hero-btn {
+        background-color: black;
+        color: white;
+        font-size: 1rem;
+        padding: .2rem .5rem;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+
+    .hero-btn:hover {
+        background-color: rgba(0, 0, 0, 0);
+        color: black;
+    }
+    
+    .top-right-section {
+        border: none;
+        border-radius: 1rem;
+        background-color: white;
+    }
+    
+    .bottom-right-section {
+        border: none;
+        border-radius: 1rem;
+        background-color: white;
+    }
+    
+    .cta-btn {
+        color: white;
+        background-color: black;
+        border-radius: 5rem;
+        font-weight: 500;
+        width: 100%;
+        padding: 3rem;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+
+    .cta-btn:hover {
+        background-color: rgba(0, 0, 0, 0);
+        color: black;
+        font-size: 1rem;
+    }
+
+    .main-grid {
+        display: grid;
+        grid-gap: 1rem;
+        height: 90vh;
+    }
 }
 
-.hero-btn {
-    background-color: black;
-    color: white;
-    padding: .2rem .5rem;
-    border-radius: 1rem;
-    cursor: pointer;
-}
 
-.top-right-section {
-    border: none;
-    border-radius: 1rem;
-    background-color: white;
-}
-
-.bottom-right-section {
-    border: none;
-    border-radius: 1rem;
-    background-color: white;
-}
-
-.cta-btn {
-    color: white;
-    background-color: black;
-    border-radius: 5rem;
-    font-weight: 500;
-    width: 100%;
-    padding: 3rem;
-    border-radius: 25px;
-    cursor: pointer;
-}
-
-/* Grid Adjustment CSS*/
-.main-grid {
-    display: grid;
-    grid-gap: 1rem;
-    height: 90vh;
-}
-
-.main-grid, .interactive-section {
-    display: grid;
-    grid-row: 1 / span 5;
-    grid-column: 1 / span 2;
-}
-
-.main-grid, .top-right-section {
-    display: grid;
-    grid-row: 1 / span 2;
-    grid-column: 3 / span 1;
-}
-
-.main-grid, .bottom-right-section {
-    display: grid;
-    grid-row: 3 / span 2;
-    grid-column: 3 / span 1;
-}
-
-.main-grid, .cta {
-    display: grid;
-    grid-row: 5 / span 1;
-    grid-column: 3 / span 1;
-}
 
 /* Footer  */
 footer {
